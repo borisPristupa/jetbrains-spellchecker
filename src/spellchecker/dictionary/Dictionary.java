@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class Dictionary {
-    private Set<String> words;
+    protected Set<String> words;
 
     public Set<String> getWords() {
         return new TreeSet<>(words);
