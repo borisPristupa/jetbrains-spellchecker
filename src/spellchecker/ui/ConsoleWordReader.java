@@ -14,7 +14,7 @@ public class ConsoleWordReader implements WordReader {
         List<String> words;
         do {
             words = Stream.of(
-                    reader.readLine().trim().split("[^a-zA-Zа-яА-ЯёЁ]")
+                    reader.readLine().trim().split("[^a-zA-Zа-яА-ЯёЁ-]")
             ).filter(s -> !s.isEmpty())
                     .collect(Collectors.toList());
         } while (words.isEmpty());
