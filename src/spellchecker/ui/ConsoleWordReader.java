@@ -20,7 +20,7 @@ public class ConsoleWordReader implements WordReader {
         } while (words.isEmpty());
 
         if (words.size() > 1)
-            System.out.println("I read only one word: " + words.get(0));
+            System.out.println("Из всех слов прочёл только одно: " + words.get(0));
 
         return words.get(0);
     }
